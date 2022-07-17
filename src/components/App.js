@@ -12,7 +12,7 @@ function handleDarkModeClick(){
 }
   return (
     <div className={"App " + (isDarkMode ? "dark" : "light")}>
-      <Header onChangeMode ={handleDarkModeClick} mode= {isDarkMode}/>
+      <Header onDarkModeClick ={handleDarkModeClick} mode= {isDarkMode}/>
       <ShoppingList items={itemData} />
     </div>
   );
